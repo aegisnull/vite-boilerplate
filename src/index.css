@@ -1,0 +1,73 @@
+@import './vendor/reset.css';
+@import './vendor/fonts.css';
+@import './vendor/animations.css';
+
+:root {
+  --background-color: #282c33;
+  --accent-color: #c778dd;
+  --gray-color: #abb2bf;
+  --white-color: #fff;
+}
+
+.App {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.button {
+  width: fit-content;
+  border: 1px solid var(--gray-color);
+}
+
+.button:hover {
+  background-color: var(--gray-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button_accent {
+  width: fit-content;
+  border: 1px solid var(--accent-color);
+}
+
+.button_accent:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button__text {
+  padding: 8px 16px;
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'Fira Code', monospace;
+  line-height: 21px;
+}
+
+.title {
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 32px;
+  font-family: 'Fira Code', monospace;
+  line-height: 42px;
+}
+
+.title::before {
+  content: '#';
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .App {
+    width: 90vw;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
